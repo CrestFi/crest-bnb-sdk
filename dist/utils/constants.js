@@ -6,14 +6,14 @@ const chainId = process.env.CHAIN_ID || "";
 exports.BSC_NETWORK_CHAIN_ID = environment === "production" || environment === "beta" ? 56 : 97;
 exports.DEFAULT_GAS_LIMIT = 300000;
 exports.BSC_ADDRESSES = {
-    BulkTransfer: "0xacaC879dD166bE70A7FEDef45cbFbe7908Aa944b",
-    CoreContract: "0xDa5D43C496E1d4553c72EEbcf36791110bC0db0b",
-    staking: "0x455c4ee78a926FaBE708e697B723e76a3993b11a",
-    stakeToken: "0x37a56cdcD83Dce2868f721De58cB3830C44C6303",
+    BulkTransfer: "0xab67E660BE1052a758daB269f555dd2fb8E0D351",
+    CoreContract: "0x86277014475162FAa110FC38BdFc6e87467506ed",
+    staking: "0x8f01c8b39588C2F5F7AF535b69c26807d527D7BA",
+    stakeToken: "0xe211CfC2Ed77b85fed72a15EFe717C2491770145",
 };
 exports.TESTNET_ADDRESSES = {
     stakeToken: "0x9A807af2E3432AB7C8D39CA5701CcC99A4FEe23E",
-    BulkTransfer: "0xd869D0f42aA904e6E67dB3532D7C252d71122F39",
+    BulkTransfer: "0xEAf43E5Ed521309CFd05de5f7E2228e871EBE14E",
     CoreContract: "0x8245C7F00dC9ed3f5F682319560f67D275704168",
     staking: "0xfb7cfF2d7a811Bed4C52d1A96661E386a860F3d2",
 };
