@@ -478,16 +478,20 @@ This guide provides an overview of how to initialize the class and perform vario
 | wBNB  | 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c |
 | USDT  | 0x55d398326f99059fF775485246999027B3197955 |
 | USDC  | 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d |
-| ZBC   | 0x37a56cdcD83Dce2868f721De58cB3830C44C6303 |
 
 ### Nautilus
 
 | Token Name | Token Address                              |
 | ---------- | ------------------------------------------ |
-| ZBC        | 0x0000000000000000000000000000000000000000 |
 | USDC       | 0xB2723928400AE5778f6A3C69D7Ca9e90FC430180 |
 | USDT       | 0xBDa330Ea8F3005C421C8088e638fBB64fA71b9e0 |
 
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions, please open an issue or submit a pull request.
+
+
+## Upgrade sdk
+1.change the verion value of package.json
+1.npm login
+2.npm publish --access public
