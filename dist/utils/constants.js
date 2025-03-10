@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.STAKE_TOKEN = exports.STAKE_CONTRACT_ADDRESS = exports.BULK_CONTRACT_ADDRESS = exports.CORE_CONTRACT_ADDRESS = exports.BSC_NODE_URL = exports.TESTNET_ADDRESSES = exports.BSC_ADDRESSES = exports.DEFAULT_GAS_LIMIT = exports.BSC_NETWORK_CHAIN_ID = void 0;
 const environment = process.env.SDK_ENV || process.env.REACT_SDK_ENV || "production";
 const chainId = process.env.CHAIN_ID || "";
-exports.BSC_NETWORK_CHAIN_ID = environment === "production" || environment === "beta" ? 56 : 97;
+exports.BSC_NETWORK_CHAIN_ID = environment === "production" || environment === "beta" ? 56 : 84532;
 exports.DEFAULT_GAS_LIMIT = 300000;
 exports.BSC_ADDRESSES = {
     BulkTransfer: "0xab67E660BE1052a758daB269f555dd2fb8E0D351",
@@ -12,10 +12,10 @@ exports.BSC_ADDRESSES = {
     stakeToken: "0xe211CfC2Ed77b85fed72a15EFe717C2491770145",
 };
 exports.TESTNET_ADDRESSES = {
-    stakeToken: "0x9A807af2E3432AB7C8D39CA5701CcC99A4FEe23E",
-    BulkTransfer: "0xEAf43E5Ed521309CFd05de5f7E2228e871EBE14E",
-    CoreContract: "0x8245C7F00dC9ed3f5F682319560f67D275704168",
-    staking: "0xfb7cfF2d7a811Bed4C52d1A96661E386a860F3d2",
+    stakeToken: "0x8a32120fE150845fdF0a402ce6D31E3D0b51f4d0",
+    BulkTransfer: "0x62cb17b7dcE57d57b3d61D7696906b3d4af4367f",
+    CoreContract: "0xB3A26fd6d69df3557Cb5e2CAb117B5a230F35F09",
+    staking: "0x1Bd92669C3008513D3A3676Ac6a99D032B211162",
 };
 
 const getAddressByType = (chainId, type) => {
@@ -25,6 +25,12 @@ const getAddressByType = (chainId, type) => {
             staking: exports.BSC_ADDRESSES.staking,
             stakeToken: exports.BSC_ADDRESSES.stakeToken,
             core: exports.BSC_ADDRESSES.CoreContract,
+        },
+        "84532": {
+            bulk: exports.TESTNET_ADDRESSES.BulkTransfer,
+            staking: exports.TESTNET_ADDRESSES.staking,
+            stakeToken: exports.TESTNET_ADDRESSES.stakeToken,
+            core: exports.TESTNET_ADDRESSES.CoreContract,
         },
     };
     const address = addresses[chainId][type];
@@ -39,7 +45,7 @@ const getAddressByTypeTest = (chainId, type) => {
             stakeToken: exports.BSC_ADDRESSES.stakeToken,
             core: exports.BSC_ADDRESSES.CoreContract,
         },
-        "97": {
+        "84532": {
             bulk: exports.TESTNET_ADDRESSES.BulkTransfer,
             staking: exports.TESTNET_ADDRESSES.staking,
             stakeToken: exports.TESTNET_ADDRESSES.stakeToken,
